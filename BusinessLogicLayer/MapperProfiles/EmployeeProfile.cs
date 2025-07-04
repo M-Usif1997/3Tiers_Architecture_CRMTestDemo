@@ -34,7 +34,7 @@ namespace BusinessLogicLayer.MapperProfiles
             .ForMember(dest => dest.lm_Employee_Manager, opt => opt.MapFrom(src =>
                 new EntityReference("cr5c1_employee", src.ManagerID)));
 
-            // UpdateDto to Entity
+            // UpdateDto to Entity to optional properties
             CreateMap<UpdateEmployeeDto, cr5c1_Employee>()
             .ForMember(dest => dest.cr5c1_EmployeeName, opt => opt.MapFrom(src => src.Name))
             .ForMember(dest => dest.cr5c1_Email, opt => opt.MapFrom(src => src.Email))
