@@ -1,7 +1,9 @@
 ﻿using DataAccessLayer.Services.CRM.Contract;
+using Microsoft.Crm.Sdk.Messages;
 using Microsoft.PowerPlatform.Dataverse.Client;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Client;
+using Xrm;
 
 namespace DataAccessLayer.Services.CRM.Implementation
 {
@@ -30,6 +32,10 @@ namespace DataAccessLayer.Services.CRM.Implementation
             return _cachedClient;
         }
 
+
+        
+       
+
         public OrganizationServiceContext GetContext()
         {
             // Cache context to reuse across Add and Save
@@ -40,6 +46,8 @@ namespace DataAccessLayer.Services.CRM.Implementation
 
             return _cachedContext;
         }
+
+   
 
     }
  }

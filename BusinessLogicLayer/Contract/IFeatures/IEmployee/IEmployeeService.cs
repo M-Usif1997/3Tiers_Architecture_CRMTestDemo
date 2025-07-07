@@ -13,6 +13,5 @@ namespace BusinessLogicLayer.Contract.IFeatures.IEmployee
 {
     public interface IEmployeeService : IBaseService<cr5c1_Employee, GetEmployeeDto, CreateEmployeeDto, UpdateEmployeeDto>
     {
-        Task<IEnumerable<GetEmployeeDto>> GetAllEmployeesTest();
     }
 }

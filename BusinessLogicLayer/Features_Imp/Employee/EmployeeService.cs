@@ -26,14 +26,6 @@ namespace BusinessLogicLayer.Features_Imp.Employee
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<GetEmployeeDto>> GetAllEmployeesTest()
-        {
-            //var employees = await _unitOfWork.GetRepository<DataAccessLayer.Entities.Employee>().GetAllAsync(DataAccessLayer.Entities.Employee.LogicalName);
-            //return employees != null && employees.Any()
-            //    ?  _mapper.Map<IEnumerable<GetEmployeeDto>>(employees)
-            //    :throw new NoDataFoundException();
 
-            throw new NotImplementedException();
-        }
     }
 }

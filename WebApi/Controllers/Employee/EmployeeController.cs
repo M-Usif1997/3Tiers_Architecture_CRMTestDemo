@@ -19,11 +19,6 @@ namespace WebApi.Controllers.Employee
             _employeeService = employeeService;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAllTest()
-        {
-            var entities = await _employeeService.GetAllEmployeesTest();
-            return Ok(entities);
-        }
+   
     }
 }
