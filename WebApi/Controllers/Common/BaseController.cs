@@ -64,7 +64,7 @@ namespace WebApi.Controllers.Common
             catch (SaveChangesFailedException scfex)
             {
 
-                return BadRequest(scfex.Message + "\n may the ForeignKey Ids that are posted not Found in Database 'Check First'");
+                return BadRequest(scfex.Message);
 
             }
 
@@ -86,7 +86,7 @@ namespace WebApi.Controllers.Common
             catch (SaveChangesFailedException scfex)
             {
 
-                return BadRequest(scfex.Message + "\n may the ForeignKey Ids that are posted not Found in Database 'Check First'");
+                return BadRequest(scfex.Message);
 
             }
 
@@ -108,7 +108,7 @@ namespace WebApi.Controllers.Common
             }
             catch (SaveChangesFailedException scfex)
             {
-                return BadRequest(scfex.Message + "\n may the ForeignKey Ids that are posted not Found in Database 'Check First'");
+                return BadRequest(scfex.Message);
 
             }
 
