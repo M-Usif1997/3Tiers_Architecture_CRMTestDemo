@@ -8,7 +8,6 @@ using Microsoft.Xrm.Sdk;
 namespace WebApi.Controllers.Common
 {
     [Route("api/[controller]/[Action]")]
-    //[Authorize] not using as I d'ont do service of generate token that use jwt token but make tests in appsettings.json
     [ApiController]
     public abstract class BaseController<TEntity, TGetDto, TCreateDto, TUpdateDto> : ControllerBase
   where TEntity : Entity
